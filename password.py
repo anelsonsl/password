@@ -1,6 +1,7 @@
 import random
 
 letrasg=['Q','E','R','P','A','D','F','G','B','N','M']
+# na proxima defenir  palavra por letra ex b=Beta defletra=[]
 letrasp=['q','e','r','p','a','d','f','g','b','n','m']
 simbolos=['!','§','$','%','&','/','(',')','=','+','*','#','-','_','.',':',',',';','<','>']
 numeros=['1','2','3','4','5','6','7','8','9']
