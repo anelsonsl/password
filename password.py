@@ -1,9 +1,13 @@
 import random
 
+# Todas as letras que nao se confundem com outras ou maiusculas
+#Excluir W,w T,t Z,z U,u I,i, O,o S,s H,h J,j K,k L,l Y,y X,x C,c V,v pela dificuladade de leitura na diferenca
 letrasg=['Q','E','R','P','A','D','F','G','B','N','M']
 # na proxima defenir  palavra por letra ex b=Beta defletra=[]
 letrasp=['q','e','r','p','a','d','f','g','b','n','m']
-simbolos=['!','§','$','%','&','/','(',')','=','+','*','#','-','_','.',':',',',';','<','>']
+#Excluir simbolos / , ; devido a leitura ou ao sistema
+simbolos=['!','§','$','%','&','(',')','=','+','*','#','-','_','.',':','<','>']
+#Excluir 0 por causa do O 
 numeros=['1','2','3','4','5','6','7','8','9']
 
 
@@ -15,7 +19,7 @@ comprimento=int(input('Quantos Carateres:'))
 # REGRAS minimu 1 Maiscula, 1 Minuscula, 1 numero, 1 Simbolo
 
 fpass=0
-
+lista_password=[]
 while fpass < quantaspass:
 
     password=''
@@ -43,5 +47,7 @@ while fpass < quantaspass:
         #print(mais,minu,num,simb)
     if mais>0 and minu>0 and simb>0 and num>0:
         fpass +=1
-        print(password)
+        lista_password.append(password)
+
+#print(lista_password)
 
