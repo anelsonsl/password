@@ -14,7 +14,9 @@ comprimento=int(input('Quantos Carateres:'))
 #
 # REGRAS minimu 1 Maiscula, 1 Minuscula, 1 numero, 1 Simbolo
 
-for i in range (1,quantaspass+1):
+fpass=0
+
+while fpass < quantaspass:
 
     password=''
     mais=0
@@ -39,8 +41,7 @@ for i in range (1,quantaspass+1):
             password +=random.choice(numeros)
             num +=1
         #print(mais,minu,num,simb)
-    if mais<0 and minu<0 and simb<0 and num<0:
-        i -=1
-        password=''
+    if mais>0 and minu>0 and simb>0 and num>0:
+        fpass +=1
+        print(password)
 
-    print(password)
