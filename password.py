@@ -1,4 +1,10 @@
 import random
+from tkinter import *
+
+
+top=Tk()
+top.mainloop()
+
 
 # Todas as letras que nao se confundem com outras ou maiusculas
 #Excluir W,w T,t Z,z U,u I,i, O,o S,s H,h J,j K,k L,l Y,y X,x C,c V,v pela dificuladade de leitura na diferenca
@@ -50,4 +56,5 @@ while fpass < quantaspass:
         lista_password.append(password)
 
 #print(lista_password)
+
 
