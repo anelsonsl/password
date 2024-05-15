@@ -4,3 +4,4 @@
 define car Maiusculas e minusculas
 define numeros
 define carateres
+Idioten 
