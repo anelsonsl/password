@@ -49,5 +49,5 @@ while fpass < quantaspass:
         fpass +=1
         lista_password.append(password)
 
-#print(lista_password)
+print(lista_password)
 
